@@ -94,7 +94,8 @@ def norn(x):
 
 def update_neurons_and_muscles_with_lineage_and_descriptions():
     v = P.values('neurons and muscles')
-    #XXX: This could be expensive...the lineage name and description should be loaded with the cell though.
+    #XXX: This could be expensive...the lineage name and description should be loaded with
+    #     the cell though.
     cells = {next(x.name()) : (norn(x.lineageName()), norn(x.description())) for x in P.Cell().load() }
     def dtt(x):
         """ Do the thing """
@@ -247,4 +248,6 @@ def do_insert():
         P.disconnect()
 
 if __name__ == '__main__':
+    # Takes about 17 minutes with ZODB FileStorage store
+    # Takes about 3 minutes with Sleepycat store
     do_insert()
