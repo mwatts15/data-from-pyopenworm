@@ -1,8 +1,9 @@
-C. Elegans sqlite3 database
----------------------------
+C. elegans database
+--------------------
 
-Compiled from the content at http://www.interintelligence.org/openworm/
+This repository contains a database stored in N3 format. It is meant to be used with [PyOpenWorm](https://github.com/openworm/PyOpenWorm/tree/alpha0.5).
 
-This separate database stored as a sqlite3 database will enable others to add to the 
-database and keep it under version control in order to avoid giving world readable access
-to the database server
+Compiled from the content at:
+
+1. [Tim Busbice's interactive database](http://www.interintelligence.org/openworm/), stored as a sqlite database in this repository
+2. [C. elegans Cell lists](https://docs.google.com/spreadsheet/ccc?key=0Avt3mQaA-HaMdGFnQldkWm9oUmQ3YjZ1LXJ4OHFnR0E&usp=drive_web#gid=1), stored as tsv files in this repository
