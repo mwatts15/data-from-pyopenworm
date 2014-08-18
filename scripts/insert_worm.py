@@ -2,9 +2,12 @@ import PyOpenWorm as P
 import traceback
 import sqlite3
 
+SQLITE_DB_LOC = SQLITE_DB_LOC
+LINEAGE_LIST_LOC = '../aux_data/C. elegans Cell List - WormAtlas.tsv'
+
 def print_evidence():
     try:
-        conn = sqlite3.connect('celegans.db')
+        conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         cur.execute("SELECT DISTINCT a.Entity, b.Entity, Citations FROM tblrelationship, tblentity a, tblentity b where EnID1=a.id and EnID2=b.id and Citations!='' ")
         for r in cur.fetchall():
@@ -18,7 +21,7 @@ def upload_muscles():
     """ Upload muscles and the neurons that connect to them
     """
     try:
-        conn = sqlite3.connect('celegans.db')
+        conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         w = P.Worm()
         cur.execute("SELECT DISTINCT a.Entity, b.Entity FROM tblrelationship, tblentity b, tblentity a where Relation = '1516' and EnID2=b.id and EnID1=a.id")
@@ -52,13 +55,9 @@ def upload_lineage_and_descriptions():
         ev = P.Evidence(uri="http://www.wormatlas.org/celllist.htm")
         # insert neurons.
         # save
-        f = open("C. elegans Cell List - WormAtlas.tsv", "r")
-        h = open("C. elegans Cell List - WormBase.tsv", "r")
+        f = open(LINEAGE_LIST_LOC, "r")
 
         # Skip headers
-        next(h)
-        next(h)
-        next(h)
         next(f)
         names = dict()
         for x in f:
@@ -117,7 +116,7 @@ def update_neurons_and_muscles_with_lineage_and_descriptions():
 
 def upload_neurons():
     try:
-        conn = sqlite3.connect('celegans.db')
+        conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         w = P.Worm()
         n = P.Network()
@@ -137,7 +136,7 @@ def upload_neurons():
 
 def upload_receptors_and_innexins():
     try:
-        conn = sqlite3.connect('celegans.db')
+        conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         w = P.Worm()
         n = P.Network()
@@ -186,7 +185,7 @@ def upload_receptors_and_innexins():
 
 def upload_synapses():
     try:
-        conn = sqlite3.connect('celegans.db')
+        conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         w = P.Worm()
         n = P.Network()
