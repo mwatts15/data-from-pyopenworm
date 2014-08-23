@@ -224,12 +224,43 @@ def upload_synapses():
     finally:
         conn.close()
 
+def infer():
+    from rdflib import Graph
+    from FuXi.Rete.RuleStore import SetupRuleStore
+    from FuXi.Rete.Util import generateTokenSet
+    from FuXi.Horn.HornRules import HornFromN3
+
+    try:
+        w = P.Worm()
+        semnet = w.rdf #fetches the entire worm.db graph
+
+        rule_store, rule_graph, network = SetupRuleStore(makeNetwork=True)
+        closureDeltaGraph = Graph()
+        network.inferredFacts = closureDeltaGraph
+
+        #build a network of rules
+        for rule in HornFromN3('fuxi/testrules.n3'):
+            network.buildNetworkFromClause(rule)
+
+        network.feedFactsToAdd(generateTokenSet(semnet)) # apply rules to original facts to infer new facts
+
+        w.rdf = semnet + closureDeltaGraph # combine original facts with inferred facts
+
+        ###uncomment next 4 lines to print inferred facts to human-readable file (demo purposes)
+        #inferred_facts = closureDeltaGraph.serialize(format='n3') #format inferred facts to notation 3
+        #inferred = open('what_was_inferred.n3', 'w')
+        #inferred.write(inferred_facts)
+        #inferred.close()
+
+    except Exception, e:
+        traceback.print_exc()
+
 def do_insert():
     import sys
     logging = False
     if len(sys.argv) > 1 and sys.argv[1] == '-l':
         logging = True
-    P.connect(configFile='default.conf',do_logging=logging)
+    P.connect(configFile='default.conf', do_logging=logging)
     try:
         upload_muscles()
         print ("uploaded muscles")
@@ -241,6 +272,8 @@ def do_insert():
         print ("uploaded receptors and innexins")
         update_neurons_and_muscles_with_lineage_and_descriptions()
         print ("updated muscles and neurons with cell data")
+        infer()
+        print ("filled in with inferred data")
     except:
         traceback.print_exc()
     finally:
