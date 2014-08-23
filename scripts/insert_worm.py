@@ -2,7 +2,7 @@ import PyOpenWorm as P
 import traceback
 import sqlite3
 
-SQLITE_DB_LOC = SQLITE_DB_LOC
+SQLITE_DB_LOC = '../aux_data/celegans.db'
 LINEAGE_LIST_LOC = '../aux_data/C. elegans Cell List - WormAtlas.tsv'
 
 def print_evidence():
