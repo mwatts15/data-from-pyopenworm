@@ -239,12 +239,14 @@ def infer():
         network.inferredFacts = closureDeltaGraph
 
         #build a network of rules
-        for rule in HornFromN3('fuxi/testrules.n3'):
+        for rule in HornFromN3('testrules.n3'):
             network.buildNetworkFromClause(rule)
 
         network.feedFactsToAdd(generateTokenSet(semnet)) # apply rules to original facts to infer new facts
 
-        w.rdf = semnet + closureDeltaGraph # combine original facts with inferred facts
+        # combine original facts with inferred facts
+        for x in closureDeltaGraph:
+            w.rdf.add(x)
 
         ###uncomment next 4 lines to print inferred facts to human-readable file (demo purposes)
         #inferred_facts = closureDeltaGraph.serialize(format='n3') #format inferred facts to notation 3
@@ -262,16 +264,16 @@ def do_insert():
         logging = True
     P.connect(configFile='default.conf', do_logging=logging)
     try:
-        upload_muscles()
-        print ("uploaded muscles")
-        upload_lineage_and_descriptions()
-        print ("uploaded lineage and descriptions")
-        upload_synapses()
-        print ("uploaded synapses")
-        upload_receptors_and_innexins()
-        print ("uploaded receptors and innexins")
-        update_neurons_and_muscles_with_lineage_and_descriptions()
-        print ("updated muscles and neurons with cell data")
+        #upload_muscles()
+        #print ("uploaded muscles")
+        #upload_lineage_and_descriptions()
+        #print ("uploaded lineage and descriptions")
+        #upload_synapses()
+        #print ("uploaded synapses")
+        #upload_receptors_and_innexins()
+        #print ("uploaded receptors and innexins")
+        #update_neurons_and_muscles_with_lineage_and_descriptions()
+        #print ("updated muscles and neurons with cell data")
         infer()
         print ("filled in with inferred data")
     except:
