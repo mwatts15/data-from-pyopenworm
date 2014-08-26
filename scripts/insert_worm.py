@@ -21,6 +21,7 @@ def upload_muscles():
     """ Upload muscles and the neurons that connect to them
     """
     try:
+        ev = P.Evidence(title="C. elegans sqlite database")
         conn = sqlite3.connect(SQLITE_DB_LOC)
         cur = conn.cursor()
         w = P.Worm()
@@ -32,7 +33,8 @@ def upload_muscles():
             n = P.Neuron(str(r[0]))
             m.innervatedBy(n)
 
-        w.save()
+        ev.asserts(w)
+        ev.save()
         #second step, get the relationships between them and add them to the graph
     except Exception:
         traceback.print_exc()
