@@ -1,4 +1,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix worm: <http://openworm.org/entities/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix worm: <http://openworm.org/entities/> .
 
-{ ?x rdf:type worm:Muscle } => { ?x rdf:type worm:TestClass } .
+{?A rdfs:subClassOf ?B. ?S a ?A} => {?S a ?B} .
+
+{?B rdfs:subClassOf ?C. ?A rdfs:subClassOf ?B} => {?A rdfs:subClassOf ?C} .
+
+{?A rdf:type worm:Cell} => {?A rdf:type worm:TestClass} .
