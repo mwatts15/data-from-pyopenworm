@@ -2,3 +2,4 @@
 @prefix worm: <http://openworm.org/entities/>.
 
 { ?x rdf:type worm:Muscle } => { ?x rdf:type worm:TestClass } .
+
