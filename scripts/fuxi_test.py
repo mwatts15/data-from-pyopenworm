@@ -11,7 +11,7 @@ m = P.Muscle()
 #save muscle to graph (and infer new triples to it, based on rules)
 m.save()
 
-#get the graph associated with th muscle cell
+#get the graph associated with the muscle cell
 graph = m.rdf.serialize(format="n3")
 
 P.disconnect()
