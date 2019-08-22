@@ -1,0 +1,40 @@
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/allele> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/chromosome> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/daysofadulthood> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/gene> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/sex> "hermaphrodite" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/stage> "adult" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/strain> "N2" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/strain_descr> "N2 lab reference strain." .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://openworm.org/entities/BioDetails/worm_id> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/BioDetails> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/arena_size> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/arena_style> "petri" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/collector> "S. Serena Ding" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/food> "OP50, diluted OD = 0.75, freshly seeded" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/habituation> "None" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/lab_location> "London, United Kingdom" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/lab_name> "Behavioural Genomics" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/media> "NGM agar low peptone" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/protocol> "Method in Ding, Schumacher et al. doi.org/10.1101/398370. Alternatively, visit dx.doi.org/10.17504/protocols.io.vyie7ue." .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://openworm.org/entities/Collection/timestamp> "20170629"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1745521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Collection> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://openworm.org/entities/MovementMetadata/biodetails> <http://openworm.org/entities/BioDetails/10.5281/zenodo.1745521> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://openworm.org/entities/MovementMetadata/collection> <http://openworm.org/entities/Collection/10.5281/zenodo.1745521> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://openworm.org/entities/MovementMetadata/provenance> <http://openworm.org/entities/Provenance/10.5281/zenodo.1745521> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://openworm.org/entities/MovementMetadata/software> <http://openworm.org/entities/Software/10.5281/zenodo.1745521> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://openworm.org/entities/MovementMetadata/subject> <http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1745521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/MovementMetadata> .
+<http://openworm.org/entities/Provenance/10.5281/zenodo.1745521> <http://openworm.org/entities/Provenance/previewlink> "None" .
+<http://openworm.org/entities/Provenance/10.5281/zenodo.1745521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Provenance> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/base_name> "None" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/framespersecond> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/mmperpixel> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/nosegskel> "None" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/software_name> "tierpsy (https://github.com/ver228/tierpsy-tracker)" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/time> "3600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://openworm.org/entities/Software/ventralside> "None" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1745521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Software> .
+<http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> <http://openworm.org/entities/Worm/scientific_name> "C. elegans" .
+<http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Worm> .
+

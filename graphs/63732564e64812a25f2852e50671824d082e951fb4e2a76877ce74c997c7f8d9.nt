@@ -1,0 +1,43 @@
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/allele> "pk610" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/chromosome> "IV" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/daysofadulthood> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/gene> "gpa-7" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/sex> "hermaphrodite" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/stage> "adult" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/strain> "NL795" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/strain_descr> "gpa-7(pk610)IV" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://openworm.org/entities/BioDetails/worm_id> "None" .
+<http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/BioDetails> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/arena_orientation> "away" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/arena_size> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/arena_style> "petri" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/collector> "Laura Grundy" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/food> "OP50" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/habituation> "30m wait" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/lab_location> "MRC Laboratory of Molecular Biology, Hills Road, Cambridge, CB2 0QH, UK" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/lab_name> "William R Schafer" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/media> "NGM agar low peptone" .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/protocol> "Method in E. Yemini et al. doi:10.1038/nmeth.2560. Worm transferred to arena 30 minutes before recording starts." .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://openworm.org/entities/Collection/timestamp> "2009-07-10T14:32:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openworm.org/entities/Collection/10.5281/zenodo.1032307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Collection> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://openworm.org/entities/MovementMetadata/biodetails> <http://openworm.org/entities/BioDetails/10.5281/zenodo.1032307> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://openworm.org/entities/MovementMetadata/collection> <http://openworm.org/entities/Collection/10.5281/zenodo.1032307> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://openworm.org/entities/MovementMetadata/provenance> <http://openworm.org/entities/Provenance/10.5281/zenodo.1032307> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://openworm.org/entities/MovementMetadata/software> <http://openworm.org/entities/Software/10.5281/zenodo.1032307> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://openworm.org/entities/MovementMetadata/subject> <http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> .
+<http://openworm.org/entities/MovementMetadata/10.5281/zenodo.1032307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/MovementMetadata> .
+<http://openworm.org/entities/Provenance/10.5281/zenodo.1032307> <http://openworm.org/entities/Provenance/previewlink> "https://www.youtube.com/watch?v=0UH4D0-C9dA" .
+<http://openworm.org/entities/Provenance/10.5281/zenodo.1032307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Provenance> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/base_name> "gpa-7 (pk610)IV on food R_2009_07_10__15_32_18__10" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/framespersecond> "25.974"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/mmperpixel> "9.4601"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/nosegskel> "6507"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/software_featureID> "OMG" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/software_name> "tierpsy (https://github.com/ver228/tierpsy-tracker)" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/software_version> "cbfc23eb4f1ac2f29be75ade7a937eed58a5b219" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/time> "299.337"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://openworm.org/entities/Software/ventralside> "anticlockwise" .
+<http://openworm.org/entities/Software/10.5281/zenodo.1032307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Software> .
+<http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> <http://openworm.org/entities/Worm/scientific_name> "C. elegans" .
+<http://openworm.org/entities/Worm/a8020ed8519038a6bbc98f1792c46c97b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openworm.org/entities/Worm> .
+
